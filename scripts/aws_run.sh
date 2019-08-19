@@ -29,8 +29,6 @@ fi
 
 touch $PIPE_RUNNING_FILE
 echo 'Launching AWS computation.'
-nohup /home/ubuntu/image-search/mowgli.py
-#nohup /home/ubuntu/image-search/bagheera.py --caffe
-#nohup /home/ubuntu/image-search/akela.py 
+nohup /home/ubuntu/image-search/compute_features.py
 rm -rf $PIPE_RUNNING_FILE
 

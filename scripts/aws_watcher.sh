@@ -3,7 +3,7 @@ while true; do
 
     krenew
 
-    /home/o.koch/image-search/hathi.py
+    /home/o.koch/image-search/transfer_features.py
     sleep 10
 
 done
