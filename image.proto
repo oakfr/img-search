@@ -1,0 +1,19 @@
+package com.criteo.hadoop.recocomputer.jobs.imagedl;
+
+message ProductImage {
+  required int32 partner_id = 1;
+  required int32 internal_id = 2;
+  required string external_item_id = 3;
+  optional string image_url = 4;
+  optional int32 image_md5 = 5;
+  optional bytes image = 6;
+  optional string image_format = 7;
+  optional ImageFeatures image_features = 8;
+}
+
+message ImageFeatures {
+  optional float aspect_ratio = 1;
+  repeated float hog_weights = 2 [packed = true];
+  repeated int32 rgb_histogram = 3 [packed = true];
+} 
+
